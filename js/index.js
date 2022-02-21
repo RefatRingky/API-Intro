@@ -16,4 +16,6 @@ const shop = {
 }
 const shopSignified = JSON.stringify(shop);
 console.log(shopSignified);
-console.log(shop);
+// console.log(shop);
+const converted = JSON.parse(shopSignified);
+console.log(converted);
