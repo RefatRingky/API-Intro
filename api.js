@@ -18,7 +18,12 @@ function loadPost() {
 }
 
 function displayUser(data) {
+  const ul = document.getElementById('users')
   for(const user of data){
-    console.log(user.name);
+    // console.log(user.name);
+    const li = document.createElement('li');
+    // li.innerText = user.name;
+    li.innerText = `name:${user.name}`;
+    ul.appendChild(li);
   }
 }
